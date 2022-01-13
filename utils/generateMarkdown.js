@@ -12,9 +12,55 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `              
+# ${data.title}
+                
+![GitHub license](https://img.shields.io/badge/license-${data.license}-blue)
+                
+## Description
+                        
+${data.description}
+                        
+## Table of Contents
+                        
+Listed below are shortcuts to different parts of the README.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [Tests](#tests)
+- [License](#liscense)
+- [Features](#features)
+- [Questions](#questions)
+                        
+## Installation
+                
+Listed below are the comand(s) required to install the necessary dependencies.    
+-   ${data.installation}
+                        
+## Usage
+                        
+${data.usage}
+                        
+## Credits
+                        
+${data.credits}
+                        
+## Tests 
+                        
+${data.tests}
+                        
+## Features
+                        
+${data.features}
+                
+## Questions
+                
+GitHub Username: ${data.github}
+https://github.com/${data.github}
+                
+You can contact me with this email address!
+Email Address: ${data.email}
+`         
 
-`;
 }
-
 module.exports = generateMarkdown;
